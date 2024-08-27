@@ -2,49 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>Simple HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <h1>Welcome to My Website</h1>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://kavya383.github.io/Ex-1/portfolio/port.html">Portfolio</a></li> <!-- Link to port.html -->
             </ul>
         </nav>
     </header>
-
     <main>
-        <section class="hero">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hello! I'm a college student specializing in full-stack web development. Explore my projects and get in touch if you'd like to collaborate!</p>
-            <a href="/projects" class="btn">View My Projects</a>
-        </section>
-
-        <section class="featured-projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>A brief description of the project and the technologies used.</p>
-                    <a href="/projects#project1" class="btn">Learn More</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>A brief description of the project and the technologies used.</p>
-                    <a href="/projects#project2" class="btn">Learn More</a>
-                </div>
-            </div>
-        </section>
+        <h2>Home Page Content</h2>
+        <p>This is the content of the home page.</p>
+        <p>Check out my <a href="port.html">portfolio</a> for more details.</p> <!-- Another link to port.html -->
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 All rights reserved.</p>
     </footer>
 </body>
 </html>
