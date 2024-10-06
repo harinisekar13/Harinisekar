@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microblogging App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login/Signup Page -->
+    <div id="login-page">
+        <h2>Login / Signup</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <button onclick="signup()">Sign Up / Login</button>
+    </div>
+
+    <!-- Home/Feed Page -->
+    <div id="home-page" style="display: none;">
+        <header>
+            <h1>Welcome, <span id="user-id"></span></h1>
+            <button onclick="logout()">Logout</button>
+        </header>
+        <div class="post-section">
+            <textarea id="post-text" placeholder="What's on your mind?"></textarea>
+            <input type="file" id="post-image" accept="image/*">
+            <button onclick="createPost()">Post</button>
+        </div>
+        <div id="feed">
+            <!-- Feed posts will go here -->
+        </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="profile-page" style="display: none;">
+        <h2>Your Profile</h2>
+        <div id="your-posts">
+            <!-- User's posts will go here -->
+        </div>
+        <button onclick="goHome()">Back to Feed</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
