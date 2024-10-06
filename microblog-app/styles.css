@@ -50,3 +50,12 @@ textarea, input[type="file"] {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+.other-user {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
