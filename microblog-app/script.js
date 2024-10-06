@@ -139,4 +139,10 @@ function displayOtherUsers() {
 
 function followUser(userId) {
     if (currentUser.following.includes(userId)) {
-        currentUser.following
+        currentUser.following = currentUser.following.filter(followedId => followedId !== userId);
+    } else {
+        currentUser.following.push(userId);
+    }
+    localStorage.setItem('users', JSON.stringify(users));
+    displayOtherUsers();
+}
